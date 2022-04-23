@@ -12,9 +12,9 @@ def find_jobs():
         position = job.find('h3').text.replace(' ', '')
         more_info = job.h3.a['href']
         with open(f'data/{index}.txt', 'w', encoding='utf-8') as f:
-            f.write(f"Company Name: {company_name.strip()}")
-            f.write(f"Position: {position.strip()}")
-            f.write(f"More Info: https://topdev.vn{more_info}")
+            f.write(f"Tên công ty: {company_name.strip()}")
+            f.write(f"Vị trí: {position.strip()}")
+            f.write(f"Xem thêm: https://topdev.vn{more_info}")
         print(f'File save: {index}')
 
 
